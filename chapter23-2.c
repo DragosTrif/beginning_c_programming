@@ -48,7 +48,9 @@ int main(void)
 		printf("What is the coustumer number?\n");
 		scanf(" %d", &idSearch);
 
-	
+	for ( i = 0; i < 10; i++ ){
+		printf("customer number: %d has balance: %2.3f \n", custId[i], custBal[i]);
+	}
 	
 	//now look for the id in the array
 
