@@ -15,18 +15,23 @@ int main(void)
 	float custBal[10] = {0.00, 45.43, 71.23, 301.56, 9.08, 192.41, 
 						389.00, 229.67, 18.31, 59.54};
 
-	int tempId, inner, outer, didSwap, i; // for sorting
+	int tempId, inner, outer, sorted, i; // for sorting
+	int num_comparisons = 0;
 	
 	float tempBal;
+
 
 	/* First sort the arrays by coustumer Id */
 	for(outer = 0; outer < 9; outer++)
 	{
-		didSwap = 0; // Becomes 1 if the list is not yet ordered
+		sorted = 1; // assume the array is already sorted
 
-		for(inner = outer; inner < 10; inner++)
+		for(inner = outer+1; inner < 10; inner++)
 		{
-			if(custId[inner] < custId[outer])
+			printf("outer : %d, inner %d, custId[outer]: %d , custId[inner]: %d, ", outer, inner, custId[outer], custId[inner]);
+			num_comparisons++;
+
+			if( custId[outer] > custId[inner] )
 			{
 				tempId = custId[inner];//Must swich both arrays or they are not longer linked
 				tempBal = custBal[inner];
@@ -34,15 +39,21 @@ int main(void)
 				custBal[inner] = custBal[outer];
 				custId[outer] = tempId;
 				custBal[outer] = tempBal;
-				didSwap = 1; // because the swap took palce
+				sorted = 0; // oops, the array was not sorted, try again
+				
 			}
-			if(didSwap == 0)
-			{
+			printf("sorted: %d, the array: ", sorted);
+			for (i = 0; i < 10; i++){
+				printf("%4d ", custId[i]);
+			}
+			printf("\n");
+			if ( !sorted ){
 				break;
 			} 
 		}
+
 	}	
-		
+		printf("num_comparisons: %d\n", num_comparisons);
 		/* Interact with the users looking to find a blance*/
 		printf("\n\n***Customer Balance Look up***\n\n ");
 		printf("What is the coustumer number?\n");
