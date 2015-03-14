@@ -1,4 +1,4 @@
-/* This program fills three arrays with the player total points
+/*  This program fills three arrays with the player total points
 rebounds and asists.It loops through the scoring array and finds 
 the game with the most points.once it knows that it prints  the 
 total from all three categories from that game*/
