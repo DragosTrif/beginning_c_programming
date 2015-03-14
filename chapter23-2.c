@@ -44,7 +44,7 @@ int main(void)
 	}	
 		
 		/* Interact with the users looking to find a blance*/
-		printf("\n\n***Custumer Balance Look up***\n\n ");
+		printf("\n\n***Customer Balance Look up***\n\n ");
 		printf("What is the coustumer number?\n");
 		scanf(" %d", &idSearch);
 
@@ -54,15 +54,15 @@ int main(void)
 
 	for(ctr = 0; ctr < 10; ctr++)
 	{
-		if(idSearch[ctr] == custId[ctr])
+		if(idSearch == custId[ctr])
 		{
 			found = 1; // flag is set to one
 			break; // no need to keep looping
 		}
-		if(custId[ctr] > idSearch) // no need to keep searching
+		/*if(custId[ctr] > idSearch) // no need to keep searching
 		{
 			break;
-		}
+		}*/
 	}
 	//Once the prev loop the id is found(found = 1) or not
 
