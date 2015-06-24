@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css' >
+  <link href="stylesfolder/style.css" rel="stylesheet" type="text/css">
+ 
+    <meta charset="utf-8">
+    <title>My test page</title>
+  </head>
+  <body>
+ 
+  <img src="images/images.jpg" width = "300px" alt="My test image">
+  <h1>Pirates of the Seven Seas </h1>
+ 	 <p> The <strong>golden</strong>  age  piracy has three seperats outburst of piracy. </p>
+  
+  
+  	
+  	<li><ol> The buccaneering period of approximately 1650 to 1680, characterized by Anglo-French seamen based on Jamaica and <a href="https://en.wikipedia.org/wiki/Tortuga_(Haiti)"> Tortuga </a> attacking Spanish colonies and shipping in the Caribbean and eastern Pacific</ol></li>
+  	<li><ol>The Pirate Round of the 1690s, associated with long-distance voyages from the Americas to rob Muslim and East India Company targets in the Indian Ocean and Red Sea</ol></li>
+  	<li><ul>The post-Spanish Succession period extending from 1716 to 1726, when Anglo-American sailors and privateers, left unemployed by the end of the War of the Spanish Succession, turned en masse to piracy in the Caribbean, the North American eastern seaboard, the West African coast, and the Indian Ocean.
+  		<p>The first Europeans to land on Tortuga were the Spaniards in 1492 during the first voyage of Christopher Columbus into the New World. On December 6, 1492, three Spanish ships entered the Windward Passage that separates Cuba and Haiti. At sunrise, Columbus noticed an island whose contours emerged from the morning mist. Because the shape reminded him of a turtle's shell, he chose the name of Tortuga</p>
+  	
+  
+
+
+  </ul>
+  <button>Change user</button>
+  <script src="scryptsfolder/main.js"></script>
+  </body>
+</html>
